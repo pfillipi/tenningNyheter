@@ -1,9 +1,9 @@
-import styles from '../styles/home.module.css'
+import styles from '../styles/home.module.scss'
 
 export default function Home() {
   return (
-    <h1 className="{styles.title}">
-      Hei verden!
+    <h1 className={styles.title}>
+      Hei <span>verden!</span>
     </h1>
   )
 }
