@@ -1,2 +1,1 @@
-# ignews
-# tenningNyhetter
+# tenningNyheter
