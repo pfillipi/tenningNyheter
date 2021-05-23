@@ -4,11 +4,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Begynne | ig.news</title>
+        <title>Begynne | tenningNyheter</title>
       </Head>
-      <h1>
-        Hei verden!
-      </h1>
+      <main>
+        <section>
+          <span>👏 Hei, velkommen!</span>
+        </section>
+
+        <img src="/images/avatar.svg" alt="Jentekoding" />
+      </main>
     </>
   )
 }
