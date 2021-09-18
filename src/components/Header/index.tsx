@@ -10,7 +10,7 @@ export function Header() {
         <img src="/images/nyheter.svg" alt="tsNyheter" />
         <nav>
           <ActiveLink activeClassName={styles.active} href="/">
-            <a>Hjemmesiden</a>
+            <a>Hjemmeside</a>
           </ActiveLink>
           <ActiveLink activeClassName={styles.active} href="/posts">
             <a>Bidragene</a>
