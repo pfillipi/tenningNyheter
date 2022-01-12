@@ -11,6 +11,8 @@ jest.mock("next/router", () => {
   };
 });
 
+describe("ActiveLink component", ())
+
 test("active link renders correctly", () => {
   const { getByText } = render(
     <ActiveLink href="/" activeClassName="active">
