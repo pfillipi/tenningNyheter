@@ -28,5 +28,5 @@ test("active link is receiving active class", () => {
     </ActiveLink>
   );
 
-  expect(getByText("Home")).toBeInTheDocument();
+  expect(getByText("Home")).toHaveClass("active");
 });
