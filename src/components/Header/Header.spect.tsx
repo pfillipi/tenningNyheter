@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { ActiveLink } from ".";
+import { Header } from ".";
 
 jest.mock("next/router", () => {
   return {
@@ -11,12 +11,12 @@ jest.mock("next/router", () => {
   };
 });
 
-describe("ActiveLink component", () => {
+describe("Header component", () => {
   it("renders correctly", () => {
     const { getByText } = render(
-      <ActiveLink href="/" activeClassName="active">
+      <Header href="/" activeClassName="active">
         <a>Home</a>
-      </ActiveLink>
+      </Header>
     );
 
     expect(getByText("Home")).toBeInTheDocument();
