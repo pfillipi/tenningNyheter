@@ -16,5 +16,6 @@ describe("Header component", () => {
     const { getByText } = render(<Header />);
 
     expect(getByText("Home")).toBeInTheDocument();
+    expect(getByText("Posts")).toBeInTheDocument();
   });
 });
