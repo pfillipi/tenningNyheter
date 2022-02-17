@@ -11,7 +11,9 @@ jest.mock("next/router", () => {
   };
 });
 
-jest.mock("next-auth/client");
+jest.mock("next-auth/client", () => {
+  return {};
+});
 
 describe("Header component", () => {
   it("renders correctly", () => {
