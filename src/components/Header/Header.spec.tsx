@@ -12,7 +12,9 @@ jest.mock("next/router", () => {
 });
 
 jest.mock("next-auth/client", () => {
-  return {};
+  return {
+    useSession() {},
+  };
 });
 
 describe("Header component", () => {
