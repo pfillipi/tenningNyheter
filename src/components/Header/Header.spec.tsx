@@ -13,7 +13,9 @@ jest.mock("next/router", () => {
 
 jest.mock("next-auth/client", () => {
   return {
-    useSession() {},
+    useSession() {
+      return [];
+    },
   };
 });
 
