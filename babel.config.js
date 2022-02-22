@@ -1,3 +1,3 @@
 module.exports = {
-  presents: ["next/babel"],
+  presets: ["next/babel"],
 };
