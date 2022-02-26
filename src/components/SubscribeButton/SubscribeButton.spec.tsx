@@ -6,9 +6,6 @@ import { SubscribeButton } from ".";
 
 jest.mock("next-auth/client", () => {
   return {
-    useSession() {
-      return [null, false];
-    },
     signIn: jest.fn(),
   };
 });
