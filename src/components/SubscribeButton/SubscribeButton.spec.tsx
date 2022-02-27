@@ -4,11 +4,7 @@ import { signIn, useSession } from "next-auth/client";
 import { useRouter } from "next/router";
 import { SubscribeButton } from ".";
 
-jest.mock("next-auth/client", () => {
-  return {
-    signIn: jest.fn(),
-  };
-});
+jest.mock("next-auth/client");
 
 jest.mock("next/router");
 
