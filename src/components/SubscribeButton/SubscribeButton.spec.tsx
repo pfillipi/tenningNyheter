@@ -9,6 +9,8 @@ jest.mock("next/router");
 
 describe("SubscribeButton component", () => {
   it("renders correctly", () => {
+    const useSessionMocked = mocked(useSession);
+
     render(<SubscribeButton />);
 
     expect(screen.getByText("Abonner na!")).toBeInTheDocument();
