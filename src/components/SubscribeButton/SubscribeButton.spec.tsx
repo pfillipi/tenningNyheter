@@ -20,6 +20,9 @@ describe("SubscribeButton component", () => {
 
   it("redirects user to sign in when not authenticated", () => {
     const signInMocked = mocked(signIn);
+    const useSessionMocked = mocked(useSession);
+
+    useSessionMocked.mockReturnValueOnce([null, false]);
 
     render(<SubscribeButton />);
 
