@@ -3,6 +3,6 @@ import Home from "../../pages";
 
 describe("Home page", () => {
   it("renders correctly", () => {
-    render(<Home />);
+    render(<Home product={{ priceId: "fake-price-id" }} />);
   });
 });
