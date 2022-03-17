@@ -5,6 +5,6 @@ describe("Home page", () => {
   it("renders correctly", () => {
     render(<Home product={{ priceId: "fake-price-id", amount: "10.00kr" }} />);
 
-    expect(screen.getByText("/10.00kr/")).toBeInTheDocument();
+    expect(screen.getByText(/10.00kr/i)).toBeInTheDocument();
   });
 });

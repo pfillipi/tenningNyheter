@@ -30,7 +30,7 @@ describe("SubscribeButton component", () => {
 
     fireEvent.click(subscribeButton);
 
-    expect(signInMocked).toHaveBeenCalledWith("/posts");
+    expect(signInMocked).toHaveBeenCalledWith("github");
   });
 
   it("redirects to post when user already has a subscription", () => {
