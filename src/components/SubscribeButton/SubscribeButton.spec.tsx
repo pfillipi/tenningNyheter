@@ -45,7 +45,7 @@ describe("SubscribeButton component", () => {
           name: "John Doe",
           email: "john.doe@example.com",
         },
-        activeSubscription: ,
+        activeSubscription: "fake-active-subscription",
         expires: "fake-expires",
       },
       false,
