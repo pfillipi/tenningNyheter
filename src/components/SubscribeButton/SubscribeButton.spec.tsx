@@ -12,6 +12,8 @@ jest.mock("next-auth/client", () => {
   };
 });
 
+jest.mock("next/router");
+
 describe("SubscribeButton component", () => {
   it("renders correctly", () => {
     render(<SubscribeButton />);
@@ -30,4 +32,6 @@ describe("SubscribeButton component", () => {
 
     expect(signInMocked).toHaveBeenCalled();
   });
+
+  it("redirects to post when user already has a subscription", () => {});
 });
