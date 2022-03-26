@@ -42,5 +42,11 @@ describe("SubscribeButton component", () => {
     const pushMocked = mocked(push);
 
     render(<SubscribeButton />);
+
+    const subscribeButton = screen.getByText("Abonner na!");
+
+    fireEvent.click(subscribeButton);
+
+    expect(pushMocked).toHaveBeenCalled();
   });
 });
