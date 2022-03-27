@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { signIn } from "next-auth/client";
 import { mocked } from "ts-jest/utils";
+import { signIn } from "next-auth/client";
 import { SubscribeButton } from ".";
 
 jest.mock("next-auth/client", () => {
@@ -8,6 +8,7 @@ jest.mock("next-auth/client", () => {
     useSession() {
       return [null, false];
     },
+    signIn: jest.fn(),
   };
 });
 
