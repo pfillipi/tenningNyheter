@@ -19,7 +19,7 @@ describe("SubscribeButton component", () => {
   });
 
   it("redirects user to sign in when not authenticated", () => {
-    const signInMocked = mocked;
+    const signInMocked = mocked(signIn);
 
     render(<SubscribeButton />);
 
@@ -27,6 +27,6 @@ describe("SubscribeButton component", () => {
 
     fireEvent.click(subscribeButton);
 
-    expect();
+    expect(signInMocked).toHaveBeenCalled();
   });
 });
