@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react";
-// import { mocked } from "ts-jest/utils";
-// import { useSession } from "next-auth/client";
+import { render, screen, fireEvent } from "@testing-library/react";
+import { signIn } from "next-auth/client";
+import { mocked } from "ts-jest/utils";
 import { SubscribeButton } from ".";
 
 jest.mock("next-auth/client", () => {
@@ -19,6 +19,14 @@ describe("SubscribeButton component", () => {
   });
 
   it("redirects user to sign in when not authenticated", () => {
+    const signInMocked = mocked;
+
     render(<SubscribeButton />);
+
+    const subscribeButton = screen.getByText("Abonner na!");
+
+    fireEvent.click(subscribeButton);
+
+    expect();
   });
 });
