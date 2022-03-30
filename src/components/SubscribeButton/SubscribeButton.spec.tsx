@@ -17,4 +17,8 @@ describe("SubscribeButton component", () => {
 
     expect(screen.getByText("Abonner na!")).toBeInTheDocument();
   });
+
+  it("redirects user to sign in when not authenticated", () => {
+    render(<SubscribeButton />);
+  });
 });
