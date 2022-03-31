@@ -15,6 +15,6 @@ describe("SubscribeButton component", () => {
   it("renders correctly", () => {
     render(<SubscribeButton />);
 
-    expect(screen.getByText("Subscribe now")).toBeInTheDocument();
+    expect(screen.getByText("Abonner na!")).toBeInTheDocument();
   });
 });

@@ -38,7 +38,7 @@ export function SubscribeButton() {
       className={styles.subscribeButton}
       onClick={handleSubscribe}
     >
-      Abonner nå !
+      Abonner na!
     </button>
   );
 }
