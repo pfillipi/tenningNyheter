@@ -5,7 +5,7 @@ import { SubscribeButton } from ".";
 
 jest.mock("next-auth/client");
 
-describe("SignInButton component", () => {
+describe("SubscribeButton component", () => {
   it("renders correctly when user is not authenticated", () => {
     render(<SubscribeButton />);
 
