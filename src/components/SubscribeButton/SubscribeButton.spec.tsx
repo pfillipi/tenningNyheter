@@ -9,6 +9,6 @@ describe("SignInButton component", () => {
   it("renders correctly when user is not authenticated", () => {
     render(<SubscribeButton />);
 
-    expect(screen.getByText("Sign in with Github")).toBeInTheDocument();
+    expect(screen.getByText("Subscribe now")).toBeInTheDocument();
   });
 });
