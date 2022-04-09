@@ -35,7 +35,7 @@ describe("SubscribeButton component", () => {
   });
 
   it("redirects to post when user already has a subscription", () => {
-    const useRouterMocked = mocked(push);
+    const useRouterMocked = mocked(useRouter);
 
     render(<SubscribeButton />);
 
