@@ -39,7 +39,7 @@ describe("SubscribeButton component", () => {
 
     useRouterMocked.mockReturnValueOnce({
       push: jest.fn(),
-    })
+    } as any);
 
     render(<SubscribeButton />);
 
