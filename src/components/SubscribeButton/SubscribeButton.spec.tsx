@@ -13,7 +13,7 @@ jest.mock("next-auth/client", () => {
   };
 });
 
-jest.mock("next/router";
+jest.mock("next/router");
 
 describe("SubscribeButton component", () => {
   it("renders correctly", () => {
@@ -36,6 +36,8 @@ describe("SubscribeButton component", () => {
 
   it("redirects to post when user already has a subscription", () => {
     const useRouterMocked = mocked(useRouter);
+
+    const pushMock = jest.fn();
 
     useRouterMocked.mockReturnValueOnce({
       push: jest.fn(),
