@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import Home from "../../pages";
 
 jest.mock("next/router/index");
-jest.mock("next-auth");
+jest.mock("next-auth/client");
 
 describe("Home page", () => {
   it("renders correctly", () => {
