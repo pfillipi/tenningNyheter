@@ -1,4 +1,7 @@
 import { render, screen } from "@testing-library/react";
+import { mocked } from "ts-jest/utils";
+
+import { stripe } from "../../services/stripe";
 import Home from "../../pages";
 
 jest.mock("next/router");
@@ -16,5 +19,7 @@ describe("Home page", () => {
     expect(screen.getByText("for 10.00kr måned")).toBeInTheDocument();
   });
 
-  it("loads initial data", () => {});
+  it("loads initial data", () => {
+    const stripeMocked = mocked(stripe);
+  });
 });
