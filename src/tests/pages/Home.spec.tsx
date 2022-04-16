@@ -7,6 +7,7 @@ jest.mock("next-auth/client", () => {
     useSession: () => [null, false],
   };
 });
+jest.mock("../../services/stripe");
 
 describe("Home page", () => {
   it("renders correctly", () => {
@@ -14,4 +15,6 @@ describe("Home page", () => {
 
     expect(screen.getByText("for 10.00kr måned")).toBeInTheDocument();
   });
+
+  it("loads initial data", () => {});
 });
