@@ -14,14 +14,14 @@ jest.mock("../../services/stripe");
 
 describe("Home page", () => {
   it("renders correctly", () => {
-    render(<Home product={{ priceId: "fake-price-id", amount: "10.00kr" }} />);
+    render(<Home product={{ priceId: "fake-price-id", amount: "10.00r" }} />);
 
     expect(screen.getByText("for 10.00kr måned")).toBeInTheDocument();
   });
 
   it("loads initial data", () => {
-    const stripeMocked = mocked(stripe.prices.retrieve);
+    const retrieveStripePricesMocked = mocked(stripe.prices.retrieve);
 
-    stripeMocked;
+    retrieveStripePricesMocked.mockReturnValueOnce();
   });
 });
