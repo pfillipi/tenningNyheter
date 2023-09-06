@@ -22,6 +22,9 @@ describe("Home page", () => {
   it("loads initial data", () => {
     const retrieveStripePricesMocked = mocked(stripe.prices.retrieve);
 
-    retrieveStripePricesMocked.mockReturnValueOnce();
+    retrieveStripePricesMocked.mockResolvedValueOnce({
+      id: "fake-price-id",
+      unit_amount: 1000,
+    } as any);
   });
 });
