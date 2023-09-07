@@ -20,6 +20,8 @@ describe("Home page", () => {
   });
 
   it("loads initial data", () => {
+    
+    
     const stripeMocked = mocked(stripe.prices.retrieve);
 
     stripeMocked;
