@@ -14,9 +14,9 @@ jest.mock("../../services/stripe");
 
 describe("Home page", () => {
   it("renders correctly", () => {
-    render(<Home product={{ priceId: "fake-price-id", amount: "10.00r" }} />);
+    render(<Home product={{ priceId: "fake-price-id", amount: "10.00kr" }} />);
 
-    expect(screen.getByText("for 10.00r måned")).toBeInTheDocument();
+    expect(screen.getByText("for 10.00kr måned")).toBeInTheDocument();
   });
 
   it("loads initial data", () => {
